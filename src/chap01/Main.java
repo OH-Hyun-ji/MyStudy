@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 	
+	//알파벳 갯수 찾기 (대소문자 구별없이)
+	
 	public int solution(String input1, char input2) {
 		int count =0;
 		input1 = input1.toUpperCase();
