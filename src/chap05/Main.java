@@ -37,7 +37,7 @@ public class Main {
 	
 	
 	///////////////////////////////////////////////
-	
+/*	
 	public static void main(String[] args){
 
         final Scanner in = new Scanner(System.in);
@@ -111,4 +111,6 @@ public class Main {
         }
 
     }
+    
+    */
 }
