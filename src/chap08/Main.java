@@ -8,9 +8,22 @@ public class Main {
 
 	final static String SUCCESS = "YES";
 	final static String FAIL = "NO";
+
 	
+	// * 주석은 inflearn 해설 
 	public String solution(String text) {
+		/* ^ -> 부정을 의미, 즉 A-Z 가 아니면 빈문자로 바꿔라
+		String answer = "NO"; 
+		String tmp =new StringBuilder(text).reverse().toString();
 		
+		** 회문문자열은 뒤집어도 같아야하므로
+		if(text.equals(tmp)) answer = SUCCESS;
+		text = text.toUpperCase().replaceAll("[^A-Z]", "");
+		System.out.println("text : "+text);
+		System.out.println("tmp : "+ tmp);
+		return answer;
+		
+		*/
 		text = text.toUpperCase();
 		String[] text1= text.split(" ");
 		String text2 ="";
@@ -51,6 +64,11 @@ public class Main {
 	public boolean checkList(char ch) {
 		return ('A' <=ch && 'Z' >= ch);
 	}
+	
+	
+	
+	
+	
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
