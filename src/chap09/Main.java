@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 public class Main {
 
-	public String solution(String text) {
-		char[] arr = text.toCharArray();
-		String result ="";
+	public Integer solution(String text) {
+		
+
+		String result = text.replaceAll("[^0-9]", "");
+		int answer =0; 
+		
+		char[] arr = result.toCharArray();
 		for(char c : arr) {
-			for(int i=0;i<10;i++) {
-				System.out.println("c : "+ c);
-				System.out.println("i : "+ i);
-				if(c == i) result += String.valueOf(i);
-			}
+			if(c >=48 || c<=57) answer = answer * 10 + (c-48);
+			
 		}
-		return result;
+		
+		return answer;
 	}
 	
 	public static void main(String[] args) {
